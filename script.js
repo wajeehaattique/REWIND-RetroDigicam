@@ -17,9 +17,9 @@ document.addEventListener("DOMContentLoaded", function () {
         document.getElementById("selectedColor");
 
 
-    if (colorButtons.length > 0) {
-    localStorage.setItem("selectedColor", "Silver");
-}
+    if (colorButtons.length > 0 && !localStorage.getItem("selectedColor")) {
+        localStorage.setItem("selectedColor", "Silver");
+    }
 
     colorButtons.forEach(function (button) {
 
