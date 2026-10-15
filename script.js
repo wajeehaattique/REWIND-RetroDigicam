@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Silver is the default camera color
     if (colorButtons.length > 0 && !localStorage.getItem("selectedColor")) {
-        localStorage.setItem("selectedColor", "Silver");
+        localStorage.setItem("selectedColor", "SILVER");
     }
 
     colorButtons.forEach(function (button) {
